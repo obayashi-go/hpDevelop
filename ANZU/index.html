@@ -3,6 +3,12 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>BAR 杏</title>
+	<meta name="keywords" content="杏,あんず,ANZU,バー,BAR,ショットバー,新宿,西新宿,カクテル,酒">
+	<meta name=”description” content="新宿駅南口近くにひっそりと佇む隠れ家的バー杏です。お一人様で、カップルで、ご友人とご一緒に、老若男女問わず皆様のお越しをシェイカーをふるってお待ちいたしております。">
+	<!-- TODO:URL決まってたら「公開時のURL」書いてチョン(全部一緒でOK) -->
+	<link rel="canonical" href="公開時のURL">
+	<link rel="alternate" hreflang="ja" href="公開時のURL">
+	<link rel="alternate" media="only screen and (max-width: 640px)" href="公開時のURL">
 	<link href="css/style.css" rel="stylesheet" type="text/css" />
 	<link href="css/component.css" rel="stylesheet" type="text/css" />
 	<link href="css/aos.css" rel="stylesheet" type="text/css" />
@@ -25,7 +31,7 @@
 <div class="Container">
 	<!-- TOP -->
 	<div class="contents" id="top">
-		<div class="top_cnt">
+		<div class="top_cnt" itemscope itemtype="http://schema.org/BarOrPub">
 			<h1>BAR 杏</h1>
 			<p>ひっそりと佇む 隠れ家的なBAR</br>
 			落ち着きあるカウンター席とテーブル席</br>
@@ -95,7 +101,7 @@
 		</div>
 	</div>
 	<!-- CONTACT -->
-	<div class="contents" id="acc">
+	<div class="contents" id="acc" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 		<div class="acc_cnt">
 			<div data-aos="fade-right">
 				<h1>ACCESS</h1>
@@ -103,13 +109,13 @@
 			<div class="info">
 				<dl>
 					<dt>店舗名</dt>
-					<dd id="info001">BAR 杏</dd>
+					<dd id="info001" itemprop="legalName">BAR 杏</dd>
 					<dt>住所</dt>
-					<dd id="info002">東京都渋谷区代々木2-7-6 GSハイム佐藤ビル401</dd>
+					<dd id="info002" itemprop="address">東京都渋谷区代々木2-7-6 GSハイム佐藤ビル401</dd>
 					<dt>電話番号</dt>
-					<dd id="info003" data-action="call" data-tel="0363042770">03-6304-2770</dd>
+					<dd id="info003" data-action="call" data-tel="0363042770" itemprop="telephone">03-6304-2770</dd>
 					<dt>営業時間</dt>
-					<dd id="info004">23:00-05:00</dd>
+					<dd id="info004"><time itemprop="openinghours" datetime="Mo, Tu, We, Th, Fr, Sa, Su 23:00-5:00">23:00-05:00</time></dd>
 					<dt>定休日</dt>
 					<dd id="info005">なし</dd>
 					<dt>席数</dt>
@@ -128,7 +134,7 @@
 		</div>
 	</div>
 	<!-- [DRINK]DRINK MENU -->
-	<div class="md-modal md-effect" id="modal">
+	<div class="md-modal md-effect" id="modal" itemscope itemprop="menu">
 		<div class="md-content">
 			<h2>DRINK MENU</h2>
 			<div class="drk_lst">
@@ -219,6 +225,36 @@
         easing: 'ease-in-out-sine'
       });
     </script>
+	<script type="application/ld+json">
+	{
+	  "@context":"http://schema.org",
+	  "@type":"Restaurant",
+	  "name":"BAR 杏",
+	  "image": "https://placehold.jp/3d4070/ffffff/150x150.png?text=Dummy", // TODO:取りあえず有効なダミー画像
+	  "address":{
+		"@type":"PostalAddress",
+		"streetAddress":"東京都渋谷区代々木2-7-6",
+		"addressLocality":"新宿区",
+		"addressRegion":"東京都",
+		"postalCode":"151-0053"
+	  },
+	  "geo":{
+		"@type":"GeoCoordinates",
+		"latitude":35.687880,
+		"longitude":139.699450
+	  },
+	  "url":"http://hoge.co.jp", // TODO: 公開時のURL
+	  "telephone":"+0363042770",
+	  "openingHoursSpecification":[
+		{
+		  "@type":"OpeningHoursSpecification",
+		  "opens":"23:00",
+		  "closes":"5:00"
+		}
+	  ],
+	  "acceptsReservations":"True"
+	}
+	</script>
 </div>
 </body>
 </html>

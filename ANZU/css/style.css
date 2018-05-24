@@ -104,7 +104,7 @@ h2 {
 /* MAIN CONTENTS
 --------------------------- */
 .Container {
-  position: releative;
+  position: relative;
 }
 .contents {
   padding   : 300px 28px 28px 28px;
@@ -207,27 +207,27 @@ h2 {
   top     : 40px;
 }
 #gl001 {
-  position: releative;
+  position: relative;
   left    : 60px;
 }
 #gl002 {
-  position: releative;
+  position: relative;
   left    : 40px;
 }
 #gl003 {
-  position: releative;
+  position: relative;
   left    : 20px;
 }
 #gl004 {
-  position: releative;
+  position: relative;
   left    : -20px;
 }
 #gl005 {
-  position: releative;
+  position: relative;
   left    : -40px;
 }
 #gl006 {
-  position: releative;
+  position: relative;
   left    : -60px;
 }
 .glAnimation01 {
@@ -273,11 +273,11 @@ h2 {
   animation        : Rfall 0.7s linear 0s 1 forwards;
 }
 @keyframes Lfall {
-0%  {transform: rotate(0);}
+0%  {transform: rotate(0deg);}
 100%  {transform: rotate(40deg);}
 }
 @keyframes Rfall {
-0%  {transform: rotate(0);}
+0%  {transform: rotate(0deg);}
 100%  {transform: rotate(-40deg);}
 }
 /* DRINK MENU BUTTON (SP)
