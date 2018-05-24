@@ -1,0 +1,555 @@
+/* designed by "Yoshitaka Ono" */
+
+@charset "utf-8";
+
+/* COMMON
+------------------------------------------------------ */
+/* Windows */
+@font-face {
+  font-family: YuGothicM;
+  font-weight: normal;
+  src: local('YuGothic-Medium'),  /* Mediumを明示的に指定 */
+       local('Yu Gothic Medium'), /* Chrome用 */
+       local('YuGothic-Regular'); /* Windows8.1ではMediumがないのでRegularを指定 */
+}
+@font-face {
+  font-family: YuGothicM;
+  font-weight: bold;
+  src: local('YoGothic-Bold'), /* Boldはそのまま */
+       local('Yu Gothic');     /* Chrome用 */
+}
+html,body {
+  font-family: -apple-system, blinkMacSystemFont, /* Macの欧文はSan Francisco (OS X 10.11以降) */
+               'Helvetica Neue', /* Macの欧文 (OS X 10.10以前) */
+               'Segoe UI',       /* Windowsの欧文 */
+               YuGothicM,        /* Windows8.1以上は游ゴシック */
+               YuGothic,         /* Macの游ゴシック */
+               Meiryo,           /* 游ゴシックが入っていないWindows */
+               sans-serif;
+  width      : 100%;
+  height     : 100%;
+  padding    : 0px;
+  margin     : 0px;
+  visibility : hidden;
+  background-color: #000;
+  background-image: none;
+}
+a {
+  text-decoration: none;
+}
+a:link,a:visited {
+  color: rgba(128,128,128,1);
+}
+a:hover {
+  color : rgba(192,192,192,0.9);
+  cursor: pointer;
+}
+h1 {
+  margin       : 0px;
+  padding      : 0px;
+  font-size    : 5rem;
+  border-bottom: solid 3px #fff;
+  width        : 500px;
+  text-shadow  : black 0 0 5px;
+}
+h2 {
+  font-size    : 2.4em;
+  font-weight  : 300;
+  border-radius: 3px 3px 0 0;
+  margin       : 0px;
+  text-shadow  : black 0 0 5px;
+}
+/* HEADER
+------------------------------------------------------ */
+.Header {
+  -ms-user-select    : none; /* IE 10+ */
+  -moz-user-select   : -moz-none;
+  -khtml-user-select : none;
+  -webkit-user-select: none;
+  user-select        : none;
+}
+/* HEADER IMAGE (SP)
+--------------------------- */
+@media screen and (min-width: 480px) {
+  .Header {
+    position             : fixed;
+    top                  : 0px;
+    left                 : 0px;
+    color                : rgba(0,0,0,1);
+    padding              : 0.5em;
+    margin               : 2em;
+    font-weight          : bold;
+    z-index              : 100;
+    background           : url("../img/menu.jpg");
+    background-attachment: scroll;
+    background-size      : auto;
+    background-repeat    : no-repeat;
+  }
+}
+/* HEADER IMAGE
+--------------------------- */
+@media screen and (min-width: 768px) {
+  background-attachment: fixed;
+}
+.Header ul {
+  margin : 0px 50px 50px 5px;
+  padding: 0px;
+}
+.Header li {
+  list-style-type: none;
+  line-height    : 50px;
+  font-family    : 'Raleway', sans-serif;
+  font-size      : 50px;
+}
+/* MAIN CONTENTS
+--------------------------- */
+.Container {
+  position: releative;
+}
+.contents {
+  padding   : 300px 28px 28px 28px;
+  box-sizing: border-box;
+  height    : 100vh;
+  color     : #fff;
+  -ms-user-select    : none; /* IE 10+ */
+  -moz-user-select   : -moz-none;
+  -khtml-user-select : none;
+  -webkit-user-select: none;
+  user-select        : none;
+}
+#top,#drk,#fod {
+  -ms-user-select    : none; /* IE 10+ */
+  -moz-user-select   : -moz-none;
+  -khtml-user-select : none;
+  -webkit-user-select: none;
+  user-select        : none;
+}
+/* CONTENTS IMAGE (SP)
+--------------------------- */
+@media screen and (min-width: 480px) {
+  #top {
+    background           : url("../img/bg001.jpg");
+    background-position  : center;
+    background-size      : cover;
+    background-repeat    : no-repeat;
+  }
+  #drk {
+    background           : url("../img/bg002.jpg");
+    background-attachment: scroll;
+    background-position  : center;
+    background-size      : cover;
+    background-repeat    : no-repeat;
+  }
+  #fod {
+    background           : url("../img/bg003.jpg");
+    background-attachment: scroll;
+    background-position  : center;
+    background-size      : cover;
+    background-repeat    : no-repeat;
+  }
+  #acc {
+    background           : url("../img/bg004.jpg");
+    background-attachment: scroll;
+    background-position  : center;
+    background-size      : cover;
+    background-repeat    : no-repeat;
+  }
+}
+/* CONTENTS IMAGE
+--------------------------- */
+@media screen and (min-width: 1126px) {
+  #top {
+    background           : url("../img/bg001.jpg");
+    background-attachment: fixed;
+    background-position  : center;
+    background-size      : cover;
+    background-repeat    : no-repeat;
+  }
+  #drk {
+    background           : url("../img/bg002.jpg");
+    background-attachment: fixed;
+    background-position  : center;
+    background-size      : cover;
+    background-repeat    : no-repeat;
+  }
+  #fod {
+    background           : url("../img/bg003.jpg");
+    background-attachment: fixed;
+    background-position  : center;
+    background-size      : cover;
+    background-repeat    : no-repeat;
+  }
+  #acc {
+    background           : url("../img/bg004.jpg");
+    background-attachment: fixed;
+    background-position  : center;
+    background-size      : cover;
+    background-repeat    : no-repeat;
+  }
+}
+/* TOP
+------------------------------------------------------ */
+.top_cnt p {
+  padding    : 0 0 0 5px;
+  font-size  : 2em;
+  text-shadow: black 0 0 5px;
+}
+/* DRINK
+------------------------------------------------------ */
+.menuConatiner {
+  display: flex;
+}
+/* img effect */
+.menuContainer img {
+  height  : 100px;
+  width   : 100px;
+  position: relative;
+  top     : 40px;
+}
+#gl001 {
+  position: releative;
+  left    : 60px;
+}
+#gl002 {
+  position: releative;
+  left    : 40px;
+}
+#gl003 {
+  position: releative;
+  left    : 20px;
+}
+#gl004 {
+  position: releative;
+  left    : -20px;
+}
+#gl005 {
+  position: releative;
+  left    : -40px;
+}
+#gl006 {
+  position: releative;
+  left    : -60px;
+}
+.glAnimation01 {
+  -webkit-animation: Lfall 0.7s linear 0s 1 forwards;
+  -moz-animation   : Lfall 0.7s linear 0s 1 forwards;
+  -ms-animation    : Lfall 0.7s linear 0s 1 forwards;
+  -o-animation     : Lfall 0.7s linear 0s 1 forwards;
+  animation        : Lfall 0.7s linear 0s 1 forwards;
+}
+.glAnimation02 {
+  -webkit-animation: Lfall 0.7s linear 0.5s 1 forwards;
+  -moz-animation   : Lfall 0.7s linear 0.5s 1 forwards;
+  -ms-animation    : Lfall 0.7s linear 0.5s 1 forwards;
+  -o-animation     : Lfall 0.7s linear 0.5s 1 forwards;
+  animation        : Lfall 0.7s linear 0.5s forwards;
+}
+.glAnimation03 {
+  -webkit-animation: Lfall 0.7s linear 1.0s 1 forwards;
+  -moz-animation   : Lfall 0.7s linear 1.0s 1 forwards;
+  -ms-animation    : Lfall 0.7s linear 1.0s 1 forwards;
+  -o-animation     : Lfall 0.7s linear 1.0s 1 forwards;
+  animation        : Lfall 0.7s linear 1.0s forwards;
+}
+.glAnimation04 {
+  -webkit-animation: Rfall 0.7s linear 1.0s 1 forwards;
+  -moz-animation   : Rfall 0.7s linear 1.0s 1 forwards;
+  -ms-animation    : Rfall 0.7s linear 1.0s 1 forwards;
+  -o-animation     : Rfall 0.7s linear 1.0s 1 forwards;
+  animation        : Rfall 0.7s linear 1.0s forwards;
+}
+.glAnimation05 {
+  -webkit-animation: Rfall 0.7s linear 0.5s 1 forwards;
+  -moz-animation   : Rfall 0.7s linear 0.5s 1 forwards;
+  -ms-animation    : Rfall 0.7s linear 0.5s 1 forwards;
+  -o-animation     : Rfall 0.7s linear 0.5s 1 forwards;
+  animation        : Rfall 0.7s linear 0.5s forwards;
+}
+.glAnimation06 {
+  -webkit-animation: Rfall 0.7s linear 0s 1 forwards;
+  -moz-animation   : Rfall 0.7s linear 0s 1 forwards;
+  -ms-animation    : Rfall 0.7s linear 0s 1 forwards;
+  -o-animation     : Rfall 0.7s linear 0s 1 forwards;
+  animation        : Rfall 0.7s linear 0s 1 forwards;
+}
+@keyframes Lfall {
+0%  {transform: rotate(0);}
+100%  {transform: rotate(40deg);}
+}
+@keyframes Rfall {
+0%  {transform: rotate(0);}
+100%  {transform: rotate(-40deg);}
+}
+/* DRINK MENU BUTTON (SP)
+--------------------------- */
+@media screen and (min-width: 480px) {
+  #drk_btn {
+    margin        : 20px;
+    padding       : 20px 20px;
+    font-family   : 'Roboto', sans-serif;
+    font-weight   : lighter;
+    font-size     : 24px;
+    letter-spacing: 0.03em;
+    box-sizing    : border-box;
+    background    : transparent;
+    outline       : none !important;
+    cursor        : pointer;
+    transition    : all 0.3s ease;
+    border        : 2px solid #000;
+  }
+}
+/* DRINK MENU BUTTON
+--------------------------- */
+@media screen and (min-width: 1000px) {
+  #drk_btn {
+    margin        : 20px;
+    padding       : 20px 50px;
+  }
+  #drk_btn:hover {
+    background: #000;
+    color     : #fff;
+  }
+}
+#drk_btn:active {
+  top: 2px;
+}
+/* drink menu */
+.drk_lst {
+  display        : -webkit-flex;
+  display        : flex;
+  flex-wrap      : wrap;
+  justify-content: center;
+}
+.drk_lst img {
+  padding: 0px;
+  height : 200px;
+  width  : 200px;
+}
+.button_wrapper {
+  text-align: center;
+}
+/*
+Copyright (c) 2016 LittleSnippets.net(@littlesnippets)
+Released under the MIT license
+http://opensource.org/licenses/mit-license.php
+*/
+.img_hover {
+  font-family: 'Montserrat', Arial, sans-serif;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 8px;
+  min-width: 200px;
+  max-width: 200px;
+  width: 100%;
+  color: #fff;
+  text-align: left;
+  font-size: 16px;
+  background: #000;
+}
+.img_hover *,
+.img_hover:before,
+.img_hover:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.img_hover img {
+  max-width: 100%;
+  backface-visibility: hidden;
+  vertical-align: top;
+}
+.img_hover:before,
+.img_hover:after {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  content: '';
+  background-color: #fff;
+  z-index: 1;
+  opacity: 0;
+}
+.img_hover:before {
+  width: 0;
+  height: 1px;
+}
+.img_hover:after {
+  height: 0;
+  width: 1px;
+}
+.img_hover figcaption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 15px 20px;
+}
+.img_hover h3,
+.img_hover h4 {
+  margin: 0;
+  font-size: 1.1em;
+  font-weight: normal;
+  opacity: 0;
+}
+.img_hover h4 {
+  font-size: .8em;
+  text-transform: uppercase;
+}
+.img_hover a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.img_hover:hover img,
+.img_hover.hover img {
+  zoom: 1;
+  filter: alpha(opacity=20);
+  -webkit-opacity: 0.2;
+  opacity: 0.2;
+}
+.img_hover:hover:before,
+.img_hover.hover:before,
+.img_hover:hover:after,
+.img_hover.hover:after {
+  opacity: 1;
+  -webkit-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+}
+.img_hover:hover:before,
+.img_hover.hover:before {
+  width: 40px;
+}
+.img_hover:hover:after,
+.img_hover.hover:after {
+  height: 40px;
+}
+.img_hover:hover h3,
+.img_hover.hover h3,
+.img_hover:hover h4,
+.img_hover.hover h4 {
+  opacity: 1;
+}
+.img_hover:hover h3,
+.img_hover.hover h3 {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+.img_hover:hover h4,
+.img_hover.hover h4 {
+  -webkit-transition-delay: 0.35s;
+  transition-delay: 0.35s;
+}
+/* FOOD
+------------------------------------------------------ */
+.food_menu {
+  width: 860px;
+}
+.food_menu h2 {
+  padding  : 0 0 0 5px;
+  text-aign: left;
+}
+.food_menu ul {
+  position: relative;
+  left    : -15px;
+}
+.food_menu li {
+  padding    : 0px;
+  margin     : 0 10px 0 0;
+  width      : 400px;
+  font-size  : 1.5em;
+  float      : left;
+  text-shadow: black 0 0 5px;
+}
+/* ACCESS
+------------------------------------------------------ */
+.info {
+  float    : left;
+  font-size: 24px;
+  text-shadow: black 0 0 5px;
+  margin   : 0 50px 50px 0;
+}
+.info dt {
+  float       : left ;
+  clear       : left ;
+  margin-right: 0.5em ;
+  width       : 100px ;
+}
+.info dd {
+  float      : left ;
+  margin-left: 1em ;
+}
+#info001,#info002,#info003 {
+  -ms-user-select    : text; /* IE 10+ */
+  -moz-user-select   : -moz-text;
+  -khtml-user-select : text;
+  -webkit-user-select: text;
+  user-select        : text;
+}
+#infoWindow h3 {
+  color: #000;
+  margin: 0px;
+  padding: 0px;
+}
+#infoWindow span {
+  color: #000;
+}
+/* Google Map Link - Light
+--------------------------- */
+.map_l {
+  margin: 70px 0 0 50px;
+  text-align: center;
+}
+.map_l p {
+  color      : #fff;
+  font-size  : 23px;
+  margin     : 5px;
+  text-shadow: black 0 0 5px;
+}
+/*
+Copyright (c) 2015 Cole Waldrip (@colewaldrip)
+Released under the MIT license
+http://opensource.org/licenses/mit-license.php
+*/
+i.material-icons {
+	font-size: 1.5rem;
+	color: white;
+	position: relative;
+	border-radius: 50%;
+	padding: 25px;
+	margin : 13px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	transition: color 0.2s ease, background-color 0.2s ease, transform 0.3s ease;
+	background-color: #27577e;
+  font-size:4rem;
+}
+
+i.material-icons:hover {
+	background-color: transparent;
+	transform: rotate(90deg);
+	cursor: pointer;
+	box-shadow: none;
+	color: #27577e;
+}
+
+i.material-icons:after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	border: solid 2px;
+	transform: scale(0.8);
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	border-radius: 50%;
+  border-width:3px;
+	transition: all 0.3s ease;
+	border-color: #27577e;
+}
+
+i.material-icons:hover:after {
+	transform: scale(1);
+	box-shadow: 10px 0 20px rgba(0, 0, 0, 0.19), 6px 0 6px rgba(0, 0, 0, 0.23);
+}

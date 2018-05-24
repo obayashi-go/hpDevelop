@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>BAR 杏</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link href="css/component.css" rel="stylesheet" type="text/css" />
+	<link href="css/aos.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/introtzikas.js"></script>
+	<!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="Header">
+	<ul class="menu">
+		<li><span><a href="#top">TOP</a></span></li>
+		<li><span><a href="#drk">DRINK</a></span></li>
+		<li><span><a href="#fod">FOOD</a></span></li>
+		<li><span><a href="#acc">ACCESS</a></span></li>
+	</ul>
+</div>
+<div class="Container">
+	<!-- TOP -->
+	<div class="contents" id="top">
+		<div class="top_cnt">
+			<h1>BAR 杏</h1>
+			<p>ひっそりと佇む 隠れ家的なBAR</br>
+			落ち着きあるカウンター席とテーブル席</br>
+			煌めくこだわりのお酒が各種</br>
+			</br>
+			素敵な一夜をお過ごし下さい</p>
+		</div>
+	</div>
+	<!-- DRINK -->
+	<div class="contents" id="drk">
+		<div data-aos="fade-right">
+			<h1>DRINK</h1>
+		</div>
+		<div class="menuContainer" align="center">
+			<img src="./img/mini_glass.png" id="gl001">
+			<img src="./img/mini_glass.png" id="gl002">
+			<img src="./img/mini_glass.png" id="gl003">
+			<button class="md-trigger" data-modal="modal" id="drk_btn" data-aos="zoom-out" data-aos-delay="100">DRINK MENU</button>
+			<img src="./img/mini_glass.png" id="gl004">
+			<img src="./img/mini_glass.png" id="gl005">
+			<img src="./img/mini_glass.png" id="gl006">
+		</div>
+	</div>
+	<!-- FOOD -->
+	<div class="contents" id="fod">
+		<div class="fod_cnt">
+			<div data-aos="fade-right">
+				<h1>FOOD</h1>
+			</div>
+			<div class="food_menu">
+				<div data-aos="fade-right" data-aos-delay="300">
+					<h2>FOOD MENU</h2>
+				</div>
+				<ul>
+					<li data-aos="fade-up" data-aos-delay="500" data-aos-duration="600">
+						ナッツ
+					</li>
+					<li data-aos="fade-up" data-aos-delay="500" data-aos-duration="600">
+						牛タンジャーキー
+					</li>
+					<li data-aos="fade-up" data-aos-delay="500" data-aos-duration="600">
+						チョコの盛り合わせ
+					</li>
+					<li data-aos="fade-up" data-aos-delay="500" data-aos-duration="600">
+						生ハム
+					</li>
+					<li data-aos="fade-up" data-aos-delay="500" data-aos-duration="600">
+						3種のオリーブ
+					</li>
+					<li data-aos="fade-up" data-aos-delay="500" data-aos-duration="600">
+						トマトとモッツァレラのカプレーゼ
+					</li>
+					<li data-aos="fade-up" data-aos-delay="500" data-aos-duration="600">
+						エイヒレ
+					</li>
+					<li data-aos="fade-up" data-aos-delay="500" data-aos-duration="600">
+						合鴨とトマトのカルパッチョ
+					</li>
+					<li data-aos="fade-up" data-aos-delay="500" data-aos-duration="600">
+						チーズの盛り合わせ
+					</li>
+					<li data-aos="fade-up" data-aos-delay="500" data-aos-duration="600">
+						信州牛のハンバーグ
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- CONTACT -->
+	<div class="contents" id="acc">
+		<div class="acc_cnt">
+			<div data-aos="fade-right">
+				<h1>ACCESS</h1>
+			</div>
+			<div class="info">
+				<dl>
+					<dt>店舗名</dt>
+					<dd id="info001">BAR 杏</dd>
+					<dt>住所</dt>
+					<dd id="info002">東京都渋谷区代々木2-7-6 GSハイム佐藤ビル401</dd>
+					<dt>電話番号</dt>
+					<dd id="info003" data-action="call" data-tel="0363042770">03-6304-2770</dd>
+					<dt>営業時間</dt>
+					<dd id="info004">23:00-05:00</dd>
+					<dt>定休日</dt>
+					<dd id="info005">なし</dd>
+					<dt>席数</dt>
+					<dd id="info006">カウンター：8席　テーブル：1組（4名）</dd>
+					<dt>決済方法</dt>
+					<dd id="info007">VISA, MASTER, UCDC, DinersClub, AmericanExpress, JCB, SAISON</dd>
+				</dl>
+			</div>
+			<!-- Google Map Light -->
+			<div class="map_l">
+				<a href="https://goo.gl/maps/aLAYsbpM2cU2">
+					<i class="material-icons">explore</i>
+				</a>
+				<p>Google Map</p>
+			</div>
+		</div>
+	</div>
+	<!-- [DRINK]DRINK MENU -->
+	<div class="md-modal md-effect" id="modal">
+		<div class="md-content">
+			<h2>DRINK MENU</h2>
+			<div class="drk_lst">
+				<figure class="img_hover">
+					<img src="./img/drink001.jpg" id="drk001">
+					<figcaption>
+						<h3>Martini</h3>
+						<h4>Cocktail - Gin Base</h4>
+					</figcaption>
+				</figure>
+				<figure class="img_hover">
+					<img src="./img/drink002.jpg" id="drk002">
+					<figcaption>
+						<h3>Moscow Mule</h3>
+						<h4>Cocktail - Vodka Base</h4>
+					</figcaption>
+				</figure>
+				<figure class="img_hover">
+					<img src="./img/drink003.jpg" id="drk003">
+					<figcaption>
+						<h3>Pampero Aniversario</h3>
+						<h4>Cocktail - Rum Base</h4>
+					</figcaption>
+				</figure>
+				<figure class="img_hover">
+					<img src="./img/drink004.jpg" id="drk004">
+					<figcaption>
+						<h3>Mockingbird</h3>
+						<h4>Cocktail - Tequila Base</h4>
+					</figcaption>
+				</figure>
+				<figure class="img_hover">
+					<img src="./img/drink005.jpg" id="drk005">
+					<figcaption>
+						<h3>DALMORE 12'</h3>
+						<h4>Malt Whisky</h4>
+					</figcaption>
+				</figure>
+				<figure class="img_hover">
+					<img src="./img/drink006.jpg" id="drk006">
+					<figcaption>
+						<h3>Rowan's Creek</h3>
+						<h4>Bourbon Whisky</h4>
+					</figcaption>
+				</figure>
+				<figure class="img_hover">
+					<img src="./img/drink007.jpg" id="drk007">
+					<figcaption>
+						<h3>Old Parr 12'</h3>
+						<h4>Bourbon Whisky</h4>
+					</figcaption>
+				</figure>
+				<figure class="img_hover">
+					<img src="./img/drink008.jpg" id="drk008">
+					<figcaption>
+						<h3>Alberta Premium</h3>
+						<h4>Canadian Whisky</h4>
+					</figcaption>
+				</figure>
+				<figure class="img_hover">
+					<img src="./img/drink009.jpg" id="drk009">
+					<figcaption>
+						<h3>白州 12年</h3>
+						<h4>Japanese Whisky</h4>
+					</figcaption>
+				</figure>
+				<figure class="img_hover">
+					<img src="./img/drink010.jpg" id="drk010">
+					<figcaption>
+						<h3>Louis Roederer Cristal</h3>
+						<h4>Champagne</h4>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="button_wrapper">
+				<button class="md-close">Close</button>
+			</div>
+		</div>
+	</div>
+	<div class="md-overlay"></div>
+	<script src="js/index.js"></script>
+	<script src="js/scrollTrigger.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/modalEffects.js"></script>
+	<script src="js/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: 'ease-in-out-sine'
+      });
+    </script>
+</div>
+</body>
+</html>
