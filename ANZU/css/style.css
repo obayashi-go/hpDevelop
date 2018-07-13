@@ -104,7 +104,7 @@ h2 {
 /* MAIN CONTENTS
 --------------------------- */
 .Container {
-  position: releative;
+  position: relative;
 }
 .contents {
   padding   : 300px 28px 28px 28px;
@@ -207,27 +207,27 @@ h2 {
   top     : 40px;
 }
 #gl001 {
-  position: releative;
+  position: relative;
   left    : 60px;
 }
 #gl002 {
-  position: releative;
+  position: relative;
   left    : 40px;
 }
 #gl003 {
-  position: releative;
+  position: relative;
   left    : 20px;
 }
 #gl004 {
-  position: releative;
+  position: relative;
   left    : -20px;
 }
 #gl005 {
-  position: releative;
+  position: relative;
   left    : -40px;
 }
 #gl006 {
-  position: releative;
+  position: relative;
   left    : -60px;
 }
 .glAnimation01 {
@@ -483,7 +483,6 @@ http://opensource.org/licenses/mit-license.php
 }
 #info001,#info002,#info003 {
   -ms-user-select    : text; /* IE 10+ */
-  -moz-user-select   : -moz-text;
   -khtml-user-select : text;
   -webkit-user-select: text;
   user-select        : text;
