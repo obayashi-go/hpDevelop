@@ -161,25 +161,37 @@ $(function(){
         centerPadding: '20px', //前後のパディング
         autoplay: true, //オートプレイ
         autoplaySpeed: 3000, //オートプレイの切り替わり時間
-        slidesToShow: 3,
-        responsive: [{
-            breakpoint: 480,
-            settings: {
-                arrows: false, // 前後の矢印非表示
-                centerMode: true,
-                centerPadding: '20px',
-                slidesToShow: 3
-            }
-        },
+        slidesToShow: 5,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    arrows: false, // 前後の矢印非表示
+                    centerMode: true,
+                    centerPadding: '30px',
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '30px',
+                    slidesToShow: 2
+                }
+            },
             {
                 breakpoint: 480,
                 settings: {
                     arrows: false,
                     centerMode: true,
-                    centerPadding: '20px',
-                    slidesToShow: 2
+                    centerPadding: '30px',
+                    slidesToShow: 1.5
                 }
-            }]
+            }
+        ]
     });
 
     $(window).on('scroll touchmove', function() {
