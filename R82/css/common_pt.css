@@ -244,6 +244,9 @@ header {
     .availableCardImgBox > img {
         width: 85vw;
     }
+    .timeline-Widget {
+        max-width: 100% !important;
+    }
     /*** SP About ***/
     #aboutSentenceBox {
         margin-top: 20px;
