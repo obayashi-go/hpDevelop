@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a18c344-4350-4fd4-a2ec-c617c29da97f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/scrollTrigger.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scrollTrigger.js" afterDir="false" />
     </list>
     <ignored path="ANZU.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,8 +24,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="201" column="5" lean-forward="true" selection-start-line="201" selection-start-column="5" selection-end-line="201" selection-end-column="5" />
+            <state relative-caret-position="1515">
+              <caret line="101" column="180" selection-start-line="101" selection-start-column="180" selection-end-line="101" selection-end-column="180" />
             </state>
           </provider>
         </entry>
@@ -48,6 +44,7 @@
       <find>releative</find>
       <find>min-width:</find>
       <find>and (min-width:</find>
+      <find>東京都渋谷区代々木2-7-6</find>
     </findStrings>
     <replaceStrings>
       <replace>relative</replace>
@@ -162,43 +159,34 @@
       <workItem from="1527166005058" duration="7653000" />
       <workItem from="1527968645594" duration="93000" />
       <workItem from="1528079016777" duration="35000" />
+      <workItem from="1535380839556" duration="1496000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13983000" />
+    <option name="totallyTimeSpent" value="15479000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="31" y="59" width="1382" height="744" extended-state="0" />
+    <frame x="-8" y="23" width="1382" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24981631" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24981631" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3289689" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3289689" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3289689" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3289689" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24981631" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3289689" />
-      <window_info id="Favorites" order="2" side_tool="true" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,6 +196,13 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3015">
+          <caret line="201" column="5" lean-forward="true" selection-start-line="201" selection-start-column="5" selection-end-line="201" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3465">
@@ -398,8 +393,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="201" column="5" lean-forward="true" selection-start-line="201" selection-start-column="5" selection-end-line="201" selection-end-column="5" />
+        <state relative-caret-position="1515">
+          <caret line="101" column="180" selection-start-line="101" selection-start-column="180" selection-end-line="101" selection-end-column="180" />
         </state>
       </provider>
     </entry>
